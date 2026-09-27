@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{extarticle}
+
+\usepackage{extsizes}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% --- REDUCED SECTION HEADING SPACING ---
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+\pdfgentounicode=1
+
+% --- CUSTOM COMMANDS WITH TIGHTER SUBHEADING SPACING ---
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=2pt, itemsep=2pt, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\huge \scshape ABDELRAHMAN ELGRM} \\ \vspace{4pt}
+    \small Cairo, Egypt \\ \vspace{3pt}
+    \footnotesize \faPhone* \hspace{1pt} +20 1027339910 \hspace{4pt} $|$ \hspace{4pt}
+    \faEnvelope \hspace{1pt} \href{mailto:abdelrahmanelgerm@gmail.com}{abdelrahmanelgerm@gmail.com} \hspace{4pt} $|$ \hspace{4pt}
+    \faLinkedin \hspace{1pt} \href{https://linkedin.com/in/abdelrahman-elgrm}{abdelrahman-elgrm} \hspace{4pt} $|$ \hspace{4pt}
+    \faGithub \hspace{1pt} \href{https://github.com/Abdurhman-elgrm}{Abdurhman-elgrm}
+\end{center}
+
+\vspace{-4pt}
+
+%-----------SUMMARY-----------
+\section{EXECUTIVE SUMMARY}
+\vspace{1pt}
+\small{Data Scientist and Python developer with hands-on experience building end-to-end ML/DL pipelines, computer vision systems, and NLP solutions using TensorFlow, PyTorch, and Scikit-learn. Designed and deployed 5 production-level projects. Currently pursuing a degree in Electrical and Computer Engineering, seeking an AI/Data Science internship to solve real-world problems with intelligent, scalable solutions.}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Menofia University}{Oct. 2022 -- Jan. 2027}
+      {Bachelor in Electrical and Computer Engineering}{GPA: 3.47}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ELARABY GROUP}{Jul. 2025 -- Sept. 2025}
+      {Engineering Intern}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Designed} a cross-platform Python/PyQt application for factory automation and developed a Computer Vision model using TensorFlow to detect adhesive precision on LED TV backlights, reducing defect escape rates by \textbf{25\%}.}
+        \resumeItem{Executed loss prevention framework checks and conducted comprehensive technical audits to streamline assembly workflows, increasing operational throughput by \textbf{15\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ALX Africa}{Jan. 2025 -- Jun. 2025}
+      {Data Scientist Intern}{}
+      \resumeItemListStart
+        \resumeItem{Constructed end-to-end ML/DL, Computer Vision, and NLP solutions using TensorFlow and PyTorch alongside \textbf{automated} Python/SQL pipelines and Power BI dashboards.}
+        \resumeItem{Managed full data lifecycles from preprocessing to deployment, transforming complex industrial datasets into actionable KPIs for key stakeholders.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{TECHNICAL PROJECTS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NEURASHIELD AI-SOC Analyst $|$ \emph{Python, FastAPI, TensorFlow, Supabase, LLMs, RAG, SQL}}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Developed an autonomous SOC agent using \textbf{FastAPI} and \textbf{Supabase} to ingest raw security logs, integrating a \textbf{RAG pipeline} to contextualize anomalies against cybersecurity frameworks.}
+        \resumeItem{Applied fine-tuned LLMs to auto-generate incident response playbooks and utilized \textbf{TensorFlow} with vector search to accelerate intelligence retrieval times by \textbf{35\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Feasibility Study Desktop App $|$ \emph{Python, PyQt6, QThread}}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Engineered} a multithreaded desktop application for industrial feasibility studies, deploying \textbf{QThread} to maintain 100\% UI responsiveness during intensive calculations.}
+        \resumeItem{Designed an intuitive \textbf{PyQt6} interface that streamlined manual data entry and \textbf{automated} report generation for engineering workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Computer Vision for Manufacturing $|$ \emph{OpenCV, TensorFlow, CNNs}}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Built a dual-purpose \textbf{CNN system} to optimize assembly line quality control, substantially lowering manual inspection costs.}
+        \resumeItem{Enforced real-time object tracking algorithms with \textbf{OpenCV} for continuous security and process monitoring across manufacturing facilities.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Maji Ndogo Water Crisis Analysis $|$ \emph{SQL, Python, Power BI}}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Analyzed \textbf{60,000+ records} using SQL queries to isolate critical infrastructure failures across regional water distribution networks.}
+        \resumeItem{Built interactive \textbf{Power BI dashboards} to visualize resource allocation gaps and guide data-driven strategy for key stakeholders.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Movie Recommendation System $|$ \emph{Python, Scikit-learn, Pandas, Flask}}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Architected a hybrid collaborative and content-based recommendation engine using \textbf{Scikit-learn}, delivering top-tier accuracy on user preference datasets.}
+        \resumeItem{Deployed model predictions via a \textbf{Flask REST API}, supporting dynamic real-time recommendation endpoints.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------COURSES-----------
+\section{COURSES \& CERTIFICATIONS}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
+    \item \textbf{ML Specialization (DeepLearning.AI):} Supervised ML (Regression, Classification, Gradient Descent), Advanced Algorithms (MLPs, Ensemble Models, TensorFlow), and Unsupervised Learning (K-Means, PCA, Deep Q-Networks).
+    \item \textbf{CS109: Probability for Computer Scientists (Stanford):} Statistical inference, probabilistic modeling, and stochastic analysis.
+    \item \textbf{Machine Learning Engineer Track (DataCamp):} End-to-end ML engineering, covering model development, deployment, and production pipelines.
+\end{itemize
+
+%-----------SKILLS-----------
+\section{SKILLS \& LANGUAGES}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=4pt]
+    \item \textbf{Technical Skills:} Python · SQL · TensorFlow · PyTorch · OpenCV · PyQt6 · FastAPI · Flask · Scikit-learn · Pandas · NumPy · Power BI · Supabase · PostgreSQL · Git · LLMs · RAG · Vector Database
+    \item \textbf{Soft Skills:} Agile Collaboration · Quantitative Reasoning · Impactful Communication · Technical Auditing · Critical Problem Solving · Project Management · Adaptability · Strategic Planning · Cross-functional Teamwork
+    \item \textbf{Languages:} Arabic (Native) · English (Fluent) · German (Beginner)
+\end{itemize
+
+%-------------------------------------------
+\end{document}
