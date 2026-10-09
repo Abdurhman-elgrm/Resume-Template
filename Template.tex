@@ -22,6 +22,10 @@
 \usepackage{fontawesome5}
 \usepackage[T1]{fontenc}
 \usepackage{charter}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -78,18 +82,19 @@
 \begin{center}
     \textbf{\huge \scshape ABDELRAHMAN ELGRM} \\ \vspace{4pt}
     \small Cairo, Egypt \\ \vspace{3pt}
-    \footnotesize \faPhone* \hspace{1pt} +20 1027339910 \hspace{4pt} $|$ \hspace{4pt}
-    \faEnvelope \hspace{1pt} \href{mailto:abdelrahmanelgerm@gmail.com}{abdelrahmanelgerm@gmail.com} \hspace{4pt} $|$ \hspace{4pt}
-    \faLinkedin \hspace{1pt} \href{https://linkedin.com/in/abdelrahman-elgrm}{abdelrahman-elgrm} \hspace{4pt} $|$ \hspace{4pt}
-    \faGithub \hspace{1pt} \href{https://github.com/Abdurhman-elgrm}{Abdurhman-elgrm}
+    \footnotesize
+    \faPhone* \hspace{1pt} +20 1027339910 \hspace{4pt}$|$\hspace{4pt}
+    \faEnvelope \hspace{1pt} \href{mailto:abdelrahmanelgerm@gmail.com}{abdelrahmanelgerm@gmail.com} \hspace{4pt}$|$\hspace{4pt}
+    \faLinkedin \hspace{1pt} \href{https://linkedin.com/in/abdelrahman-elgrm}{LinkedIn} \hspace{4pt}$|$\hspace{4pt}
+    \faGithub \hspace{1pt} \href{https://github.com/Abdurhman-elgrm}{GitHub} \hspace{4pt}$|$\hspace{4pt}
+    \raisebox{-0.25em}{\includegraphics[height=1.2em]{logo.png}}\hspace{2pt}\href{https://abdelrahmanaelgrmme.vercel.app/}{Portfolio}
 \end{center}
-
 \vspace{-4pt}
 
 %-----------SUMMARY-----------
 \section{EXECUTIVE SUMMARY}
 \vspace{1pt}
-\small{Data Scientist and Python developer with hands-on experience building end-to-end ML/DL pipelines, computer vision systems, and NLP solutions using TensorFlow, PyTorch, and Scikit-learn. Designed and deployed 5 production-level projects. Currently pursuing a degree in Electrical and Computer Engineering, seeking an AI/Data Science internship to solve real-world problems with intelligent, scalable solutions.}
+\small{Data Scientist and Python developer with hands-on experience building end-to-end ML/DL pipelines, computer vision systems, and NLP solutions using TensorFlow, PyTorch, and Scikit-learn. Currently pursuing a degree in Electrical and Computer Engineering, seeking an AI/Data Science internship to solve real-world problems with intelligent, scalable solutions.}
 
 %-----------EDUCATION-----------
 \section{EDUCATION}
@@ -131,6 +136,21 @@
       \resumeItemListEnd
 
     \resumeSubheading
+      {UCI Heart Disease Predictor $|$ \emph{Python, Scikit-learn, XGBoost, Pandas, Streamlit}}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Built an end-to-end clinical ML pipeline on \textbf{920 patient records} from 4 hospitals, tuning Logistic Regression, Random Forest, and XGBoost with \textbf{GridSearchCV}; the selected Random Forest reached \textbf{96\% recall} and \textbf{0.934 ROC-AUC}, missing only 4 of 102 sick patients.}
+      \resumeItemListEnd
+
+    \newpage
+    \resumeSubheading
+      {Premier League Match Predictor $|$ \emph{Python, XGBoost, Scikit-learn, FastAPI, Streamlit}}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{27 leak-free features} (Elo ratings, rolling form, league position, head-to-head) from \textbf{9,000+ matches} since 2000; with a strict time-based split, XGBoost reached \textbf{53.4\% accuracy} vs. a 43.2\% home-win baseline.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Feasibility Study Desktop App $|$ \emph{Python, PyQt6, QThread}}{}
       {}{}
       \resumeItemListStart
@@ -169,7 +189,7 @@
     \item \textbf{ML Specialization (DeepLearning.AI):} Supervised ML (Regression, Classification, Gradient Descent), Advanced Algorithms (MLPs, Ensemble Models, TensorFlow), and Unsupervised Learning (K-Means, PCA, Deep Q-Networks).
     \item \textbf{CS109: Probability for Computer Scientists (Stanford):} Statistical inference, probabilistic modeling, and stochastic analysis.
     \item \textbf{Machine Learning Engineer Track (DataCamp):} End-to-end ML engineering, covering model development, deployment, and production pipelines.
-\end{itemize
+\end{itemize}
 
 %-----------SKILLS-----------
 \section{SKILLS \& LANGUAGES}
@@ -177,7 +197,7 @@
     \item \textbf{Technical Skills:} Python · SQL · TensorFlow · PyTorch · OpenCV · PyQt6 · FastAPI · Flask · Scikit-learn · Pandas · NumPy · Power BI · Supabase · PostgreSQL · Git · LLMs · RAG · Vector Database
     \item \textbf{Soft Skills:} Agile Collaboration · Quantitative Reasoning · Impactful Communication · Technical Auditing · Critical Problem Solving · Project Management · Adaptability · Strategic Planning · Cross-functional Teamwork
     \item \textbf{Languages:} Arabic (Native) · English (Fluent) · German (Beginner)
-\end{itemize
+\end{itemize}
 
 %-------------------------------------------
 \end{document}
